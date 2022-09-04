@@ -27,5 +27,12 @@ class Test(unittest.TestCase):
         result1=FizBuz.fizzBuzz(10)
         self.assertEqual(result1,[1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz'])
 
+    def test_Print_Multiple_of_3_and_5_both(self):
+        result=FizBuz.fizzBuzz(15)
+        self.assertEqual(result,[1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz'])
+
+        result1=FizBuz.fizzBuzz(30)
+        self.assertEqual(result1,[1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16, 17, 'Fizz', 19, 'Buzz', 'Fizz', 22, 23, 'Fizz', 'Buzz', 26, 'Fizz', 28, 29, 'Fizz Buzz'])
+
 
 
