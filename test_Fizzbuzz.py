@@ -11,3 +11,7 @@ class Test(unittest.TestCase):
         result1=FizBuz.fizzBuzz(2)
         self.assertEqual(result1,[1,2])
     
+
+    def test_Print_Multiple_of_3(self):
+        result=FizBuz.fizzBuzz(3)
+        self.assertEqual(result,[1,2,"Fizz"])
